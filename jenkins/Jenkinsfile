@@ -31,7 +31,7 @@ pipeline {
                             transfers: [
                                 sshTransfer(
                                     excludes: '',
-                                    execCommand: 'my-app.sh',
+                                    execCommand: '/root/jenkins/my-app.sh',
                                     execTimeout: 120000,
                                     flatten: false,
                                     makeEmptyDirs: false,
