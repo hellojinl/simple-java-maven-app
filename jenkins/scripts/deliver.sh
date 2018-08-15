@@ -27,5 +27,5 @@ java -jar target/${NAME}-${VERSION}.jar
 
 echo 'copy scripts to target'
 set -x
-cp -R jenkins/scripts/ target/
+cp deploy/deploy.sh target/
 set +x

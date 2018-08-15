@@ -31,7 +31,7 @@ pipeline {
                             transfers: [
                                 sshTransfer(
                                     excludes: '',
-                                    execCommand: '/root/jenkins/my-app.sh',
+                                    execCommand: '/root/jenkins/deploy.sh',
                                     execTimeout: 120000,
                                     flatten: false,
                                     makeEmptyDirs: false,
@@ -40,7 +40,7 @@ pipeline {
                                     remoteDirectory: '',
                                     remoteDirectorySDF: false,
                                     removePrefix: 'target/',
-                                    sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar, target/scripts/*.sh')
+                                    sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar, target/deploy.sh')
                             ],
                             usePromotionTimestamp: false,
                             useWorkspaceInPromotion: false,
