@@ -31,7 +31,7 @@ pipeline {
                             transfers: [
                                 sshTransfer(
                                     excludes: '',
-                                    execCommand: '/root/jenkins/deploy.sh',
+                                    execCommand: 'chmod 777 /root/jenkins/deploy.sh, /root/jenkins/deploy.sh',
                                     execTimeout: 120000,
                                     flatten: false,
                                     makeEmptyDirs: false,

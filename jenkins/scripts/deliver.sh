@@ -27,6 +27,5 @@ java -jar target/${NAME}-${VERSION}.jar
 
 echo 'copy scripts to target'
 set -x
-chmod 777 deploy/deploy.sh
 cp deploy/deploy.sh target/
 set +x
