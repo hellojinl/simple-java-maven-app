@@ -37,9 +37,9 @@ pipeline {
                                     makeEmptyDirs: false,
                                     noDefaultExcludes: false,
                                     patternSeparator: '[, ]+',
-                                    remoteDirectory: 'target',
+                                    remoteDirectory: '',
                                     remoteDirectorySDF: false,
-                                    removePrefix: '',
+                                    removePrefix: 'target/',
                                     sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar, target/scripts/*.sh')
                             ],
                             usePromotionTimestamp: false,
