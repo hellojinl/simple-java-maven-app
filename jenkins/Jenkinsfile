@@ -40,7 +40,7 @@ pipeline {
                                     remoteDirectory: '',
                                     remoteDirectorySDF: false,
                                     removePrefix: 'target/',
-                                    sourceFiles: '**/target/my-app-1.0-SNAPSHOT.jar')
+                                    sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar')
                             ],
                             usePromotionTimestamp: false,
                             useWorkspaceInPromotion: false,
