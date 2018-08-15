@@ -10,7 +10,7 @@ set +x
 
 echo 'copy scripts to target'
 set -x
-cp -R jenkins/* target
+cp -R jenkins/scripts/* target/scripts
 set +x
 
 echo 'The following complex command extracts the value of the <name/> element'
