@@ -8,6 +8,11 @@ set -x
 mvn jar:jar install:install help:evaluate -Dexpression=project.name
 set +x
 
+echo 'copy scripts to target'
+set -x
+cp -R jenkins/* target
+set +x
+
 echo 'The following complex command extracts the value of the <name/> element'
 echo 'within <project/> of your Java/Maven project''s "pom.xml" file.'
 set -x

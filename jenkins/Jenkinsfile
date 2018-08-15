@@ -37,10 +37,10 @@ pipeline {
                                     makeEmptyDirs: false,
                                     noDefaultExcludes: false,
                                     patternSeparator: '[, ]+',
-                                    remoteDirectory: '',
+                                    remoteDirectory: 'target',
                                     remoteDirectorySDF: false,
                                     removePrefix: '',
-                                    sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar, jenkins/scripts/deliver.sh')
+                                    sourceFiles: 'target/my-app-1.0-SNAPSHOT.jar, target/scripts/*.sh')
                             ],
                             usePromotionTimestamp: false,
                             useWorkspaceInPromotion: false,
