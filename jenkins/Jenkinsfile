@@ -40,7 +40,7 @@ pipeline {
                                     remoteDirectory: '',
                                     remoteDirectorySDF: false,
                                     removePrefix: 'target/',
-                                    sourceFiles: '**/simple-java-maven-app/target/my-app-1.0-SNAPSHOT.jar')
+                                    sourceFiles: '**/simple-java-maven-app/target/my-app-1.0-SNAPSHOT.jar, **/simple-java-maven-app/jenkins/scripts/deliver.sh')
                             ],
                             usePromotionTimestamp: false,
                             useWorkspaceInPromotion: false,
